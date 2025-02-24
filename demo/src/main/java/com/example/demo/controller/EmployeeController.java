@@ -36,13 +36,13 @@ public class EmployeeController {
         EmployeeEntity employeeResult =  employeeService.createEmployee(employee);
         return new ResponseEntity<>(employeeResult, HttpStatus.CREATED);
     }
+    
 
     @GetMapping
     public List<EmployeeEntity> getAllEmployees() {
         return employeeService.getAllEmployees();
     }
 
-    
     @GetMapping("/{id}")
     public ResponseEntity<EmployeeEntity> getEmployeeById(@PathVariable Long id) {
         EmployeeEntity employee = employeeService.getEmployeeById(id);
