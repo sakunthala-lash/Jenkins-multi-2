@@ -30,7 +30,6 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    
     @PostMapping
     public ResponseEntity<EmployeeEntity> createEmployee(@RequestBody @Valid EmployeeEntity employee) {
         log.info("Log level is info for create employee: {}", employee);  
