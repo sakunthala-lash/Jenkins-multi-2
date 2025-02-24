@@ -19,7 +19,6 @@ import com.example.demo.service.StudentService;
 
 import jakarta.validation.Valid;
 
-
 @RestController
 @RequestMapping("/students")
 public class StudentController {
